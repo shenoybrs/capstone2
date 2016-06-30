@@ -200,7 +200,7 @@ public class BankSelectActivity extends ActionBarActivity {
 
 
         Button myButton = (Button) findViewById(R.id.findSelectedbank);
-        new Runnable() {
+        new Thread() {
             public void run() {
                 AppSyncService.setAlarm(getApplicationContext());
             }

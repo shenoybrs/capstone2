@@ -18,7 +18,7 @@ public class BankAppWidget extends AppWidgetProvider {
         CharSequence widgetText = context.getString(R.string.appwidget_text);
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.bank_app_widget);
-        views.setTextViewText(R.id.appwidget_text, widgetText);
+        views.setImageViewResource(R.id.appwidget_text,  R.drawable.ic_widget_launcher);
 
 
         // Create an Intent to launch MainActivity
