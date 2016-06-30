@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "200723517848",
+    "project_id": "offerbank-e6e8"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200723517848:android:d35c2ed01bc4ab0c",
+        "android_client_info": {
+          "package_name": "com.capstone.offerbank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpncDgZcthBeeu-QpsO6NX7InNVvuCRzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-79938813-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
