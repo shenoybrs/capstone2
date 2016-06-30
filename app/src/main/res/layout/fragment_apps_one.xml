@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:textview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/back_arrow_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp">
+
+            <ImageButton
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/commonlib_action_back_drawable"
+                android:contentDescription="@string/grid_screen_back_arrow" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/back_arrow_layout"
+            android:alpha="140"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:text="@string/title_frag_apps_grid"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+             />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_layout"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:padding="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/grid_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/loading_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jw_loading_apps_msg"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+             />
+
+        <ProgressBar
+            android:id="@+id/progress_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loading_app"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/retry_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loading_app"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/button_retry"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent" >-->
+
+
+    <!--</FrameLayout>-->

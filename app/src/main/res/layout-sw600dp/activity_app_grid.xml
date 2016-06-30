@@ -1,8 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:baselineAligned="false"
+android:divider="?android:attr/dividerHorizontal"
+android:orientation="horizontal">
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/app_grid_container"
-    android:layout_width="match_parent"
+    android:layout_weight="2"
+    android:layout_width="0dp"
     android:layout_height="match_parent"
     android:background="@android:color/white"
+    tools:layout="@android:layout/list_content"
     android:orientation="vertical">
 
     <ProgressBar
@@ -11,3 +21,20 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
 </FrameLayout>
+
+    <FrameLayout
+
+
+
+        android:id="@+id/app_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" >
+    <ProgressBar
+        android:id="@+id/progress_app2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>
+</LinearLayout>

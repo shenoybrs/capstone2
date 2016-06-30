@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/commonlib_backontap" android:state_pressed="true"/>
+    <item android:drawable="@drawable/commonlib_backontap" android:state_focused="true"/>
+    <item android:drawable="@drawable/commonlib_back"/>
+</selector><!-- From: file:/mnt/mediumHDD/jenkins/jenkins/.jenkins/.jenkins/jobs/Lib-Common-Job/workspace/libcommon/src/main/res/drawable/commonlib_action_back_drawable.xml -->

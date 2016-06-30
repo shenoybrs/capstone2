@@ -1,0 +1,78 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">OfferBank</string>
+    <string name="find_banks_that_are_selected">Select the Banks for your offers</string>
+   <string name="get_offers">Get Offers</string>
+   <string name="action_settings">Settings</string>
+   <string name="title_activity_apps_grid">bank App Center</string>
+   <string name="title_frag_apps_grid">Offers for the selected banks</string>
+   <string name="jw_loading_apps_msg"> Loading Apps&#8230;</string>
+   <string name="download_percent"><xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+   <string name="download_remaining"><xliff:g example="3 minutes" id="duration">%s</xliff:g> left</string>
+   <string name="notification_download_failed">Download unsuccessful.</string>
+   <string name="notification_download_complete">Download complete.</string>
+   <string name="notification_download_waiting">Download waiting.</string>
+
+   <plurals name="notif_summary_active">
+      <item quantity="one">1 file downloading</item>
+      <item quantity="other"><xliff:g id="number">%d</xliff:g> files downloading</item>
+   </plurals>
+   <plurals name="notif_summary_waiting">
+      <item quantity="one">1 file waiting</item>
+      <item quantity="other"><xliff:g id="number">%d</xliff:g> files waiting</item>
+   </plurals>
+
+   <string name="download_unknown_title">&lt;Initializing&#8230;&gt;</string>
+   <string name="button_retry">Retry</string>
+   <string name="app_store_failure">Data Format Error</string>
+   <string name="appcenter_vac">View Account</string>
+   <string name="appcenter_header">Appcenter Tester</string>
+   <string name="appcenter_intialize">Initialize Appcenter</string>
+   <string name="appcenter_defualt">Proceed With Default Group</string>
+   <string name="appcenter_custom_group">Proceed With Custom Group</string>
+   <string name="no_apps_msg"> No apps on appstore</string>
+   <string name="logout_error_title">Logout Erorr</string>
+   <string name="logout_error_msg">You had logout from antoher app,Please kindly login.</string>
+
+   <string name="install">Install</string>
+   <string name="uninstall">Uninstall</string>
+   <string name="update">Update</string>
+   <string name="open">Open</string>
+   <string name="view_detail">View Details</string>
+   <string name="font_roboto_bold">Roboto-Bold</string>
+   <string name="font_roboto_regular">roboto-medium</string>
+   <string name="font_roboto_medium">roboto-medium</string>
+
+   <string name="install_caps">INSTALL</string>
+   <string name="uninstall_caps">UNINSTALL</string>
+   <string name="update_caps">UPDATE</string>
+   <string name="get_it">GET IT</string>
+
+   <string name="jio_apps_icon">Bank Apps Icon</string>
+   <string name="dialog_screenshot_icon">Dialog screenshot icon</string>
+   <string name="expand_more">Expand more button</string>
+   <string name="menu_icon_tap">Menu icon tap</string>
+   <string name="grid_screen_back_arrow">Grid screen back arrow</string>
+   <string name="teaser_screen_arrow_expand_more">Teaser screen arrow expand more</string>
+   <string name="detail_screen_back_arrow">Detail screen back arrow</string>
+   <string name="teaser_screen_back_arrow">Teaser screen back arrow</string>
+
+   <string name="cancel_download">X</string>
+   <string name="cancel">CANCEL</string>
+   <string name="network_availability_description">Please check your network availability before proceeding!</string>
+   <string name="network_availability_title">No network connection</string>
+   <string name="button_ok">OK</string>
+   <string name="commonlib_unexpected_error_title">some error</string>
+   <string name="commonlib_unexpected_error_desc">some error</string>
+   <string name="commonlib_No_Application_Available">some error</string>
+   <string name="commonlib_No_Application_Available_description">some error</string>
+   <string name="commonlib_app_coming_soon">coming soon</string>
+   <string name="commonlib_app_coming_soon_description">coming soon</string>
+   <string name="commonlib_unable_to_reach_server">some error</string>
+    <string name="appwidget_text">Offers</string>
+    <string name="add_widget">Add widget</string>
+   <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+   <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+   <string name="adtype">BANNER</string>
+   <string name="select_one_offer">Please select atleast one offer</string>
+   <string name="no_offers_available">No Offers Available ,Please check your network</string>
+</resources>

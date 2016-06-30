@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppCenterTextView">
+        <attr name="font_name" format="string" />
+    </declare-styleable>
+    <attr name="status_color" format="color|reference"></attr>
+</resources>
