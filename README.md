@@ -19,7 +19,8 @@ DEBUG_KEY_ALIAS=androiddebugkey
 DEBUG_KEY_PASSWORD=android
 
 
-copy santosh.keystore in your .android home folder for example
+copy santosh.keystore from app folder to your .android home folder
+for example mine is in
 C:\Users\santosh.shenoy\.android
 
 # capstone2
