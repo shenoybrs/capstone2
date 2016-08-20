@@ -1,17 +1,22 @@
 <resources xmlns:xliff="http://schemas.android.com/tools">
-    <string name="app_name">OfferBank</string>
-    <string name="find_banks_that_are_selected">Select the Banks for your offers</string>
-   <string name="get_offers">Get Offers</string>
+    <string name="app_name">Pic Scramble</string>
+    <string name="pic_scramble">Pic Scramble</string>
+   <string name="pic_scramble_desc">Welcome to memory game where 9 images from flickr’s will appear to you for 15 seconds . Observe the position of each image . After the time a reference image will appear and you will have to select the same image in the grid , this game is to check your memory.</string>
+   <string name="start_game">Start game</string>
    <string name="action_settings">Settings</string>
    <string name="title_activity_apps_grid">bank App Center</string>
-   <string name="title_frag_apps_grid">Offers for the selected banks</string>
-   <string name="jw_loading_apps_msg"> Loading Apps&#8230;</string>
+   <string name="title_frag_apps_grid">Match the image with the reference</string>
+   <string name="jw_loading_apps_msg"> Loading Images&#8230;</string>
    <string name="download_percent"><xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
    <string name="download_remaining"><xliff:g example="3 minutes" id="duration">%s</xliff:g> left</string>
    <string name="notification_download_failed">Download unsuccessful.</string>
    <string name="notification_download_complete">Download complete.</string>
    <string name="notification_download_waiting">Download waiting.</string>
-
+   <string name="selection_text">Select the position of below image</string>
+   <string name="flip_text">Remember the positions!. Images will flip in 15 seconds</string>
+   <string name="game_start">Game starts..</string>
+   <string name="time_left">Time left !!!</string>
+   <string name="sec">sec</string>
    <plurals name="notif_summary_active">
       <item quantity="one">1 file downloading</item>
       <item quantity="other"><xliff:g id="number">%d</xliff:g> files downloading</item>
@@ -47,7 +52,7 @@
    <string name="update_caps">UPDATE</string>
    <string name="get_it">GET IT</string>
 
-   <string name="jio_apps_icon">Bank Apps Icon</string>
+   <string name="pix_to_select">pixs to select</string>
    <string name="dialog_screenshot_icon">Dialog screenshot icon</string>
    <string name="expand_more">Expand more button</string>
    <string name="menu_icon_tap">Menu icon tap</string>
@@ -59,6 +64,7 @@
    <string name="cancel_download">X</string>
    <string name="cancel">CANCEL</string>
    <string name="network_availability_description">Please check your network availability before proceeding!</string>
+   <string name="user_won">You Win the Game</string>
    <string name="network_availability_title">No network connection</string>
    <string name="button_ok">OK</string>
    <string name="commonlib_unexpected_error_title">some error</string>

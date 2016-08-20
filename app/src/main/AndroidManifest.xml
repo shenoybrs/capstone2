@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.capstone.offerbank">
+    package="com.capstone.pixscramble">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -8,17 +8,14 @@
 
 
     <application
-        android:name=".AppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+
         <activity
-            android:name=".BankSelectActivity"
+            android:name="com.capstone.pixscramble.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,26 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AppsGridActivity">
+        <activity android:name="com.capstone.pixscramble.PixGridActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".AppDetailActivity"
-            android:exported="false"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data
-                    android:host="appcenter"
-                    android:pathPrefix="/appdetail"
-                    android:scheme="jiolib" />
             </intent-filter>
         </activity>
         <activity
@@ -54,38 +34,20 @@
             android:theme="@android:style/Theme.Translucent" />
 
         <provider
-            android:name=".provider.AppsProvider"
-            android:authorities="com.capstone.offerbank.provider.apps"
+            android:name="com.capstone.pixscramble.provider.AppsProvider"
+            android:authorities="com.capstone.pixscramble.provider.apps"
             android:exported="true"
-            android:permission="com.capstone.offerbank.provider.apps.JIO_APPS_CONTENT" />
+            android:permission="com.capstone.pixscramble.provider.apps.APPS_CONTENT" />
 
         <service
-            android:name=".service.AppSyncService"
+            android:name="com.capstone.pixscramble.service.AppSyncService"
             android:enabled="true"
             android:exported="true"
-            android:permission="com.capstone.offerbank.provider.apps.JIO_APPS_CONTENT">
+            android:permission="com.capstone.pixscramble.provider.apps.APPS_CONTENT">
             <intent-filter>
-                <action android:name="com.capstone.offerbank.service.action.SYNC_JIO_APPS" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <intent-filter>
-                <action android:name="com.capstone.offerbank.service.action.CHECK_UPDATES" />
-            </intent-filter>
         </service>
-
-        <receiver android:name=".BankAppWidget">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/bank_app_widget_info" />
-        </receiver>
-
-
-
     </application>
 
 </manifest>

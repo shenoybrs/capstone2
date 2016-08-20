@@ -1,8 +1,9 @@
-There are 2 component to this project one is the client and server . Server is a build by me for my quick data access 
-with the help of scripts.google.com. The Data is manually being added as of now .
+Design of the project is as below :-
 
-2 google services used are admob and analytics.
-
+The intent service is used to hit the flickr server for images , store in a simple database through a
+content provider and when loader is invoked from the fragment the loader call back hooks the cursor
+to the adpater and the images disappear after 15 sec , as the user selects the image the position
+is compared to validate the image matches v/s not.
 
 Please copy the below text in your .gradle folder
 

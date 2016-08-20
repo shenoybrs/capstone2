@@ -18,45 +18,16 @@
             android:layout_gravity="center"
             android:background="@drawable/grid_card_background_selector">
 
-            <com.capstone.offerbank.NetworkImageView
+            <com.capstone.pixscramble.NetworkImageView
                 android:id="@+id/app_jionetwork_icon"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:layout_centerHorizontal="true"
-                android:contentDescription="@string/jio_apps_icon"
+                android:contentDescription="@string/pix_to_select"
                 android:scaleType="fitXY" />
 
 
-            <TextView
-                android:id="@+id/app_item_title"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/app_jionetwork_icon"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:ellipsize="end"
-                android:gravity="center_horizontal"
-                android:lines="1"
-                android:paddingLeft="8dp"
-                android:textColor="#2b2b2b"
-                android:textSize="12sp"
-                />
 
-            <TextView
-                android:id="@+id/app_version_txt_view"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/app_item_title"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="8dp"
-                android:ellipsize="end"
-                android:gravity="center_horizontal"
-                android:lines="1"
-                android:paddingBottom="12dp"
-                android:paddingLeft="8dp"
-                android:textColor="#4ca0ff"
-                android:textSize="10sp"
-                />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>

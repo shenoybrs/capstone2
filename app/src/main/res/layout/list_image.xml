@@ -1,4 +1,4 @@
-<com.capstone.offerbank.NetworkImageView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.capstone.pixscramble.NetworkImageView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/image"
     android:focusable="false"
     android:focusableInTouchMode="false"

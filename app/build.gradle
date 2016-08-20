@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.capstone.offerbank"
+        applicationId "com.capstone.pix"
         minSdkVersion 11
         targetSdkVersion 23
         versionCode 1
@@ -43,8 +43,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3'
     compile 'org.apache.httpcomponents:httpmime:4.3.3'
     compile 'com.squareup.okhttp3:okhttp:3.1.2'
-    compile 'com.google.android.gms:play-services-ads:9.0.0'
-    compile 'com.google.android.gms:play-services-analytics:9.0.0'
+
 
 }
-apply plugin: 'com.google.gms.google-services'

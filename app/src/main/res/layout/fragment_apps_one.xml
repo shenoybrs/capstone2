@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:textview="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/action_layout"
         android:layout_width="match_parent"
         android:background="@color/colorPrimary"
@@ -41,7 +42,62 @@
             android:textSize="16sp"
              />
 
-    </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selection_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/selection_text"
+        android:visibility="gone" />
+
+    <com.capstone.pixscramble.NetworkImageView
+        android:id="@+id/single_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/darker_gray"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/timer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/alarm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/time_left" />
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circular_textview"
+            android:gravity="center"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/sec" />
+
+    </LinearLayout>
 
     <GridView
         android:id="@+id/grid"
@@ -51,12 +107,12 @@
         android:background="#ffffff"
         android:gravity="center"
         android:horizontalSpacing="5dp"
-        android:numColumns="2"
+        android:numColumns="3"
         android:padding="5dp"
         android:stretchMode="columnWidth"
         android:verticalSpacing="5dp" />
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/grid_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -92,8 +148,8 @@
             android:gravity="center"
             android:text="@string/button_retry"
             android:visibility="invisible" />
-    </RelativeLayout>
-</RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
 
 
     <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent" >-->
